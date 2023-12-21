@@ -133,38 +133,3 @@ void file::encryptFile() {
 
 
 }
-
-
-
-/*
-
-#include "File.h"
-#include <fstream>
-
-
-file::file(const std::string &fileName){
-    this->Name = fileName;
-    //this->size = 10000;
-}
-std::string file:: getName(){
-    return this->Name;
-}
-
-void file:: encryptFile(){
-    //going to first read the file
-    std::string content;
-    std::ifstream ReadFile(this->Name);
-    if(ReadFile.is_open()){
-        while(std::ifstream::getline(ReadFile,content)){
-            std::cout << content << std::endl;
-        }
-        ReadFile.close();
-    }
-    else{
-        std::cerr << "Unable to open file" << std::endl;
-    }
-}
-
-/*int file::getSize(const std::string & fileName){
-    return this->size;
-}*/
